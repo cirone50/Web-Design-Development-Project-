@@ -19,3 +19,23 @@
   --color-text: #1F2A24;        /* Greenish near-black */
 }
 
+/* Fonts Poppins and Open sans */
+
+
+/* Heading, nav, buttons */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Body Text */
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
