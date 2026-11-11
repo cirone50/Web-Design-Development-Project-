@@ -1,0 +1,21 @@
+/* style.css -n Group N */
+
+:root {
+  /* Accent (buttons, icons, details) */
+  --color-accent: #BF8B2E;      /* SDG 12 gold */
+
+  /* Gold links and text */
+  --color-gold-dark: #8A6420;   /* Dark gold */
+
+  /* Header, footer, headings */
+  --color-green-dark: #2F4F3A;  /* Dark green */
+
+  /* Backgrounds */
+  --color-bg: #F5EFE3;          /* Light beige - page background */
+  --color-card-bg: #F3E6CC;     /* Very light gold - card background */
+  --color-section-alt: #FFFFFF; /* White - alternating sections */
+
+  /* Main text */
+  --color-text: #1F2A24;        /* Greenish near-black */
+}
+
