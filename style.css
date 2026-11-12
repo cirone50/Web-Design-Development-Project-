@@ -39,3 +39,51 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+
+#header-img {
+	width: 100%;
+	display: block;
+
+}
+
+.nav-underline {
+	width: 100%;
+	font-size: 1.4rem;
+	gap: 50px;
+	justify-content: center;
+	padding: 20px;
+}
+
+.contain h2 {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.donate-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+
+}
+
+.card-img-top {
+	width: 200px;
+}
+
+.donate-cards .card {
+  max-width: 320px;
+}
+
+
+
+form {
+	border: 1px solid black;
+}
+
+
+
+
+
+
