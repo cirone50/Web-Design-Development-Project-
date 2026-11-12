@@ -61,10 +61,10 @@
 }
 
 .donate-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 100px;
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	gap: 100px;
 
 }
 
@@ -73,15 +73,51 @@
 }
 
 .donate-cards .card {
-  max-width: 320px;
+  	max-width: 320px;
 }
 
 
 
-form {
-	border: 1px solid black;
+/* Donate Form */
+
+.form-suggest form {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px;
 }
 
+.donate-form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.donate-form textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.donate-form button {
+  align-self: flex-end;
+  padding: 8px 40px;
+  border-radius: 12px;
+}
 
 
 
