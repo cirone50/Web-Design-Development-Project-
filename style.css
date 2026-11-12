@@ -68,6 +68,8 @@
 
 }
 
+
+
 .card-img-top {
 	width: 200px;
 }
@@ -120,6 +122,22 @@
 }
 
 
+/* Footer */
+
+.footer {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin-top: 40px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: black;
+}
+
+.footer p {
+	margin: 0;
+}
 
 
 
