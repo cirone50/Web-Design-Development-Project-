@@ -60,7 +60,7 @@
   			<div class="card-body">
    		 	<h4 class="card-title">Charity 1 - Food</h4>
    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    			<a href="#" class="btn-solid theme-primary">Go somewhere</a>
+    			<a href="#" class="btn-solid theme-primary">Read More</a>
  			</div>	
 			</div>
 
@@ -69,7 +69,7 @@
   			<div class="card-body">
    		 	<h4 class="card-title">Charity 2 - Clothes</h4>
    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    			<a href="#" class="btn-solid theme-primary">Go somewhere</a>
+    			<a href="#" class="btn-solid theme-primary">Read More</a>
  			</div>	
 			</div>
 
@@ -78,7 +78,7 @@
   			<div class="card-body">
    		 	<h4 class="card-title">Charity 3 - Environment</h4>
    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    			<a href="#" class="btn-solid theme-primary">Go somewhere</a>
+    			<a href="#" class="btn-solid theme-primary">Read More</a>
  			</div>	
 			</div>
 		</div>
@@ -87,21 +87,29 @@
 		<section class="form-suggest">
 		
 			<form class="donate-form">
-				<fieldset>
-				<legend>Suggest a Charity</legend>
-				<label for="name">Name</label>
-				<input type="text" id="name" name="name" required>
+  		<fieldset>
+   			<legend>Suggest a Charity</legend>
 
-				<label for="email">Email</label>
-				<input type="text" id="email" name="email" required>
+   			 <div class="form-row">
+      			<div class="form-field">
+        		<label for="name">Name</label>
+        		<input type="text" id="name" name="name" required>
+      		</div>
+      			<div class="form-field">
+       			<label for="email">Email</label>
+        		<input type="email" id="email" name="email" required>
+     		</div>
+    		</div>
 
-				<label for="messagem">Message</label>
-				<input type="text" id="message" name="message" required>
+    		<div class="form-field">
+      		<label for="message">Message</label>
+      		<textarea id="message" name="message" rows="6" required></textarea>
+    		</div>
 
-				<button type="submit">Submit</button>
-				</fieldset>
-			</form>
-			
+    		<button type="submit">Submit</button>
+  		</fieldset>
+		</form>
+
 		</section>
 		<!-- Footer -->
 			<div class="footer">
