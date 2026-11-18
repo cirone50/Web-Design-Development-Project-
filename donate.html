@@ -1,7 +1,6 @@
 <!-- donatePage.html Ana Clara-->
 <!DOCTYPE html>
 <html lang="en">
-<html>
 	<head>
 		
 		<meta charset="utf-8">
@@ -9,14 +8,14 @@
 		<!-- meta author -->
 		<meta name="author" content="Ana Clara Cirone">
 		<title>Donate</title>
-		<!-- style.css -->
-		<link rel="stylesheet" href="style.css">
 		<!-- Bootstrap -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap" rel="stylesheet">
+		<!-- style.css -->
+		<link rel="stylesheet" href="style.css">
 
 	</head>
 	<body>
@@ -24,13 +23,13 @@
 			<div class="navbar">
 				<ul class="nav nav-underline">
   					<li class="nav-item">
-   						 <a class="nav-link " href="#">Home</a>
+   						 <a class="nav-link " href="homePage.html">Home</a>
   					</li>
 					 <li class="nav-item">
 					    <a class="nav-link" href="#">Food & Clothes</a>
 					 </li>
 					 <li class="nav-item">
-					    <a class="nav-link" href="#">Recycle</a>
+					    <a class="nav-link" href="recycle.html">Recycle</a>
 					 </li>
 					 <li class="nav-item">
 					    <a class="nav-link active" aria-current="page">Donate</a>
@@ -38,8 +37,9 @@
 					</ul>
 			</div>
 			<!-- Header with image -->
-			<div class="header">
-				<img id="header-img" src="images/foto_heading.png" alt="image_heading">
+			<div class="header header-donate">
+				<img id="main-img" src="images/foto_heading.jpg" alt="image_heading">
+				<h1 class="header-title">find a charity and<br>make a difference</h1>
 			</div>
 			<div class="contain">
 				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -55,7 +55,7 @@
 			<!-- Created one more div for all the cards -->
 		<div class="donate-cards">
 
-			<div class="card" id="food" style="max-width: 320px">
+			<div class="card" id="food">
  			<img src="images/food.jpg" class="card-img-top" alt="donate_food_image">
   			<div class="card-body">
    		 	<h4 class="card-title">Charity 1 - Food</h4>
@@ -64,7 +64,7 @@
  			</div>	
 			</div>
 
-			<div class="card" id="clothes" style="max-width: 320px">
+			<div class="card" id="clothes">
  			<img src="images/clothes.jpg" class="card-img-top" alt="donate_clothes_image">
   			<div class="card-body">
    		 	<h4 class="card-title">Charity 2 - Clothes</h4>
@@ -73,12 +73,12 @@
  			</div>	
 			</div>
 
-			<div class="card" id="environment" style="max-width: 320px">
+			<div class="card" id="environment">
  			<img src="images/environment.jpg" class="card-img-top" alt="donate_environment_image">
   			<div class="card-body">
    		 	<h4 class="card-title">Charity 3 - Environment</h4>
    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    			<a href="https://www.friendsoftheearth.ie/" target="_black" class="btn-solid theme-primary">Read More</a>
+    			<a href="https://www.friendsoftheearth.ie/" target="_blank" class="btn-solid theme-primary">Read More</a>
  			</div>	
 			</div>
 		</div>

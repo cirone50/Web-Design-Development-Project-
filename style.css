@@ -40,25 +40,128 @@
     "wdth" 100;
 }
 
+/* ========================
+   Base for all the pages
+   ========================= */
 
-#header-img {
-	width: 100%;
-	display: block;
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
 
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-green-dark);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+a {
+    color: var(--color-gold-dark);
+}
+
+/*============
+    Buttons 
+ ============*/
+
+
+button {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+    background-color: var(--color-gold-dark);
+    transition: 0.3s;
+}
+
+button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+/* =====================
+Navigation for all pages 
+========================*/
+
+.navbar {
+    background-color: var(--color-green-dark);
+    padding: 15px;
 }
 
 .nav-underline {
-	width: 100%;
-	font-size: 1.4rem;
-	gap: 50px;
-	justify-content: center;
-	padding: 20px;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+.navbar .nav {
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar .nav-link {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--color-accent);
+  transition: 0.3s;
+}
+
+/*  ===================================
+     Header Image (Recycle and Donate)
+   ===================================== */
+
+#header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===================================
+     Shared Section all the pages 
+   =================================== */
+
+.contain {
+    padding: 25px;
+    margin: 20px;
 }
 
 .contain h2 {
 	text-align: center;
 	font-size: 1.5rem;
 }
+
+/* Cards (home + donate) */
 
 .donate-cards {
   	display: flex;
@@ -68,76 +171,229 @@
 
 }
 
+.donate-cards .card {
 
+    max-width: 320px;
+    background-color: var(--color-card-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* ========================
+      HOME PAGE - Sean
+   ========================*/
+
+.hero-banner {
+    background-color: var(--color-green-dark);
+    padding: 60px 20px;
+}
+
+.hero-banner h1 {
+    color: white;
+}
+
+.circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid var(--color-accent);
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.white-section {
+    background-color: var(--color-section-alt);
+}
+
+.fact-card {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.cta-btn {
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+/* ==============================
+      RECYCLE PAGE - Akhenaton
+   ==============================*/
+
+.content-card, .alternate-section, .quiz-section {
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 1100px;
+    border-radius: 8px;
+}
+
+.content-card {
+    background-color: var(--color-card-bg);
+}
+
+.alternate-section,
+.quiz-section {
+    background-color: var(--color-section-alt);
+}
+
+.recycle-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recycle-item {
+    background-color: var(--color-section-alt);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 200px;
+}
+
+#quiz {
+    background-color: var(--color-bg);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.quiz-question {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-bottom: 1px solid #D6C9B1;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* ============================
+     DONATE PAGE - Ana Clara
+   ============================*/
+
+#main-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-donate {
+    position: relative;
+}
+
+.header-title {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    margin: 0;
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+
+/* Cards da página Donate */
+.donate-charities .donate-cards {
+  gap: 60px;
+}
+
+.donate-charities .card {
+  max-width: 380px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.donate-charities .card-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.donate-charities .card-body {
+  padding: 20px;
+}
 
 .card-img-top {
-	width: 200px;
+    width: 100%;
 }
-
-.donate-cards .card {
-  	max-width: 320px;
-}
-
-
-
-/* Donate Form */
 
 .form-suggest form {
-  border: 1px solid black;
-  border-radius: 12px;
-  padding: 30px;
-  margin: 40px;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 40px;
 }
 
 .donate-form fieldset {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  flex: 1;
-  min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 200px;
 }
 
 .donate-form textarea {
-  width: 100%;
-  resize: vertical;
+    width: 100%;
+    resize: vertical;
 }
 
 .donate-form button {
-  align-self: flex-end;
-  padding: 8px 40px;
-  border-radius: 12px;
+    align-self: flex-end;
+    padding: 8px 40px;
+    border-radius: 12px;
 }
 
-
-/* Footer */
+/* ==============================
+      FOOTER (todas as paginas)
+   ============================== */
 
 .footer {
-  border-top: 1px solid black;
-  padding-top: 10px;
-  margin-top: 40px;
+    background-color: var(--color-green-dark);
+    color: white;
+    border-top: 1px solid black;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 .footer a {
-	text-decoration: none;
-	color: black;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.footer a:hover {
+    color: var(--color-accent);
 }
 
 .footer p {
-	margin: 0;
+    margin: 8px;
 }
 
 
 
+	
