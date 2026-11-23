@@ -34,7 +34,7 @@ form.addEventListener("submit", function (event) {
         showError(emailInput, emailError, "Please enter your email.");
         isValid = false;
     } else if (!emailPattern.test(emailInput.value.trim())) {
-        showError(emailInput, emailError, "Please enter a valid email, e.g. name@example.com");
+	 	showError(emailInput, emailError, "Please enter a valid email, e.g. name@example.com");
         isValid = false;
     } else {
         showValid(emailInput, emailError);
@@ -48,7 +48,29 @@ form.addEventListener("submit", function (event) {
     } else {
         showValid(messageInput, textError);
 	}
+
+	if (isValid) {
+		// Everything ok
+		const userName = nameInput.value.trim();
+        formSuccess.textContent = `Thank you, ${userName}! We'll review your suggestion.`;
+
+        form.reset();
+        nameInput.classList.remove("input-valid");
+        emailInput.classList.remove("input-valid");
+        messageInput.classList.remove("input-valid");
+	} else {
+		// Something wrong
+		formSuccess.textContent = "";
+	}
 });
+
+// CHARACTER COUNTER 
+	messageInput.addEventListener("input", function () {
+	const length = messageInput.value.trim().length;
+	messageCounter.textContent = `${length} / 20 characters`;
+});
+
+
 
 function showError(input, errorElement, message) {
 	errorElement.textContent = message;
@@ -61,7 +83,4 @@ function showValid(input, errorElement) {
     input.classList.remove("input-error");
 }
 
-showError(nameInput, nameError, "Please enter your name");
-showError(emailInput, emailError, "Please enter a valid email");
-showError(messageInput, textError, "Message must have at least 20 characters");
 
