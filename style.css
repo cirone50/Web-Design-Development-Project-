@@ -307,6 +307,13 @@ Navigation for all pages
     font-weight: 500;
 }
 
+#header-subtitle {
+    padding-bottom: 30px;
+}
+
+.donate-charities h2 {
+    margin-bottom: 50px;
+}
 
 /* Cards da página Donate */
 .donate-charities .donate-cards {
@@ -417,6 +424,90 @@ Navigation for all pages
     padding: 8px 40px;
     border-radius: 12px;
 }
+
+.error-message {
+    color: #B3261E;
+    font-size: 0.9rem;
+}
+
+
+.donate-dorm .input-valid {
+    border-color: var(--color-green-dark);
+}
+
+#form-success {
+    color: var(--color-green-dark);
+    font-weight: bold;
+
+}
+
+/* ---------- Donate responsive ---------- */
+
+@media (max-width: 992px) {
+    .header-donate .header-title { font-size: 3rem; left: 10%; }
+    .donate-charities .donate-cards { gap: 40px; }
+}
+
+@media (max-width: 768px) {
+
+    .navbar { 
+        padding: 5px; 
+    }
+    .nav-underline { 
+        font-size: 1rem; padding: 5px; 
+    }
+    .navbar .nav { 
+        gap: 0; 
+    }
+    .navbar .nav-link {
+        margin: 0;
+        padding: 8px 10px;
+        white-space: nowrap; 
+    }
+    .header-donate #main-img { 
+        height: 320px; 
+        object-fit: cover; 
+    }
+    .header-donate .header-title { 
+        font-size: 2.3rem; left: 8%; 
+    }
+    .donate-charities .donate-cards { 
+        gap: 30px; 
+        padding: 0 15px; 
+    }
+    .form-suggest .donate-form {
+         padding: 20px; 
+     }
+    .donate-form .form-row { 
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .header-donate #main-img { 
+        height: 260px; 
+    }
+    .header-donate .header-title {
+        font-size: 1.8rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+    .donate-charities .card { 
+        max-width: 100%; 
+    }
+    .donate-form legend { 
+        font-size: 1.5rem; 
+    }
+    .donate-form .form-field { 
+        min-width: 100%; 
+    }
+    .donate-form button { 
+        align-self: stretch; 
+    }
+}
+
 
 /* ==============================
       FOOTER (All the pages)
